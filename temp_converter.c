@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* comments!   second pass at converting celsius to fahrenheit in a loop. -- floats
+/* comments!   third pass at converting celsius to fahrenheit in a loop. -- floats, for loop.
 */
 
 int main()
@@ -45,7 +45,7 @@ int main()
 	printf("\nFahr\tCelsius\n");
 	printf("---------------\n");
 
-	for (fh = 0; fh <= 300; fh = fh + 20)
+	for (fh = 300; fh >= 0; fh = fh - 20)
 		printf("%3d \t%6.1f\n", fh, (5.0/9.0) * (fh-32));
 
 	printf("\n\n");
