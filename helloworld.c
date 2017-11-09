@@ -3,5 +3,6 @@
 int main()
 
 {
-	printf("helloworld\n");
+	printf("\thelloworld\n\t\b\\\n");
+	printf("bonjour le monde!\n\n");
 }
