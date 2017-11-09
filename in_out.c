@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/*
 int main()
 {
 	int c;
@@ -11,10 +11,25 @@ int main()
 		putchar(c);
 		printf("\n");
 		//  below advances one letter OF THE GIVEN STRING??? e.g. m, then o, then n...
-		//  how can the same methos do both these things?
+		//  how can the same method do both these things?
 		c = getchar();
 	}
 }
+*/
+
+
+
+
+int main()
+{
+	int c;
+
+	while ((c = getchar()) != EOF) {
+		//  putchar DOES require an argument.
+		putchar(c);
+	}
+}
+
 
 
 // int main()
