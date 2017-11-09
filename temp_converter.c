@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-/* comments!   first pass at converting celsius to fahrenheit in a loop.
+/* comments!   second pass at converting celsius to fahrenheit in a loop. -- floats
 */
 
 int main()
 
 {
-	int fahr, celsius;
+	float fahr, celsius;
 	int start, stop, step;
 
 	start = 0;
@@ -16,8 +16,8 @@ int main()
 	fahr = start;
 
 	while (fahr <= stop) {
-		celsius = 5 * (fahr-32) / 9;
-		printf("%d\t%d\n", fahr, celsius);
+		celsius = (5.0/9.0) * (fahr-32.0);
+		printf("%3.0f\t%6.1f\n", fahr, celsius);
 		fahr = fahr + step;
 	}
 
