@@ -15,11 +15,11 @@ int main()
 	/* example did NOT have brackets around the while statement.  Seems you don't need them if only one, 
 	but necessary for multiple. */
 
-	while (w != EOF) {
+	while (w != '\n') { // wow..... double quotes failed here. but sinmgle quotes ok.
 		putchar(w);
 		w = getchar(); 
 		++nc;
-		printf("\tcount: %.0ld\n", nc);
+		printf("\tcount: %.0ld\n", nc);  // double quotes NEEDED here.
 	}
 
 	printf("\tfinal:  %ld\n", nc);
