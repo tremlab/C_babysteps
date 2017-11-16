@@ -17,9 +17,9 @@ int main()
 
 	while (w != EOF) {
 		putchar(w);
-		printf("\tcount: %.0ld\n", nc);
 		w = getchar(); 
 		++nc;
+		printf("\tcount: %.0ld\n", nc);
 	}
 
 	printf("\tfinal:  %ld\n", nc);
