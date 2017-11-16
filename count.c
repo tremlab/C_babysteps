@@ -1,19 +1,28 @@
 #include <stdio.h>
 
-
+/*strugging with ob1.  Wrting code to step through the increments of the while loop.
+successful!  But still confused. ????*/
 
 int main()
 {
 	
 	long nc;
-	nc = 0;
+	int w;
 
-	while (getchar() != EOF) {
-		printf("%.0ld\n", nc); 
+	nc = 0;
+	w = getchar();
+
+	/* example did NOT have brackets around the while statement.  Seems you don't need them if only one, 
+	but necessary for multiple. */
+
+	while (w != EOF) {
+		putchar(w);
+		printf("\tcount: %.0ld\n", nc);
+		w = getchar(); 
 		++nc;
 	}
 
-	printf("final:  %ld\n", nc);
+	printf("\tfinal:  %ld\n", nc);
 	return 0;
 }
 
@@ -29,26 +38,5 @@ int main()
 
 
 
-/* below, trying to write code that would print each letter and the current count so I could watch each increment.  not working yet.  :P
-*/
 
-
-// int main()
-// {
-	
-// 	long nc;
-// 	int l;
-
-// 	nc = 0;
-// 	l = getchar();
-// 	printf("word = %i\n", l);
-
-// 	while ((l = getchar()) != EOF)
-// 		putchar(l);
-// 		printf("count = %ld\n", nc);
-// 		++nc;
-
-// 	printf("final:  %ld\n", nc);
-// 	return 0;
-// }
 
